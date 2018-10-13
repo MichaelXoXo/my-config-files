@@ -7,7 +7,7 @@ export ZSH="/Users/zhangxiang/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="steeef"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -64,7 +64,10 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+   cp
+   extract
    git 
+   git-open
    autojump
    zsh-autosuggestions
    zsh-syntax-highlighting
@@ -102,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -l"
 alias gz="tar -zxvf"
+alias cp="cp -i"
 alias ga="git add"
 alias gd="git diff"
 alias gf="git fetch"
