@@ -7,7 +7,8 @@ export ZSH="/Users/zhangxiang/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="steeef"
+# ZSH_THEME="steeef"
+ZSH_THEME="agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -113,7 +114,7 @@ alias gp="git push"
 alias gs="git status"
 alias gc="git commit -m"
 alias gco="git checkout"
-
+alias hp="hexo clean && hexo g && hexo d"
 
 # added by Anaconda3 5.2.0 installer
 export PATH="/Users/zhangxiang/anaconda3/bin:$PATH"
