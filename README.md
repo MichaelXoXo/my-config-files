@@ -1,12 +1,15 @@
-# mydotfiles
+# my-config-files
 
-需要注意的是，配置文件中的用户名需要改为机器环境中你的实际用户名
+- 写在前面：**需要注意的是，配置文件中的用户名需要改为机器环境中你的实际用户名**
 
-主要记录Linux环境下的相关工具的配置文件：
+主要记录Linux/Mac环境下的相关工具的配置文件：
+
 - vim
 - zsh
 - git
 - bash
+- popclip
+- alfred-workflow
 
 ## 参考
 
