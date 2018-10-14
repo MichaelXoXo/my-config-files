@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/zhangxiang/.oh-my-zsh"
+export ZSH="/Users/michael/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -117,4 +117,4 @@ alias gco="git checkout"
 alias hp="hexo clean && hexo g && hexo d"
 
 # added by Anaconda3 5.2.0 installer
-export PATH="/Users/zhangxiang/anaconda3/bin:$PATH"
+export PATH="/Users/michael/anaconda3/bin:$PATH"
