@@ -8,7 +8,8 @@ export ZSH="/Users/michael/.oh-my-zsh"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="steeef"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="ys"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -118,3 +119,13 @@ alias hp="hexo clean && hexo g && hexo d"
 
 # added by Anaconda3 5.2.0 installer
 export PATH="/Users/michael/anaconda3/bin:$PATH"
+
+# maven 3.5.4
+export PATH="/Users/michael/app/maven/bin:$PATH"
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
+# git for hexo
+export PATH="/usr/bin/git:$PATH"
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export PATH="/usr/local/sbin:$PATH"
