@@ -43,6 +43,10 @@
     - `ctrl d` 关闭当前 pane，等价于当前 shell 中输入`exit` 
 
 ### 示例截图
+- session 界面说明
+
+![](https://ws2.sinaimg.cn/large/006tNbRwly1fxscvbszggj30wv05bdgw.jpg)
+
 - session 会话选择
 
 ![](https://ws1.sinaimg.cn/large/006tNbRwly1fxsa22tpexj30ce01uq31.jpg)
