@@ -108,6 +108,9 @@ source $ZSH/oh-my-zsh.sh
 alias ll="ls -l"
 alias gz="tar -zxvf"
 alias cp="cp -i"
+alias mvim='mvim -v'
+
+
 alias ga="git add"
 alias gd="git diff"
 alias gf="git fetch"
@@ -129,3 +132,6 @@ export LANG=en_US.UTF-8
 export PATH="/usr/bin/git:$PATH"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export PATH="/usr/local/sbin:$PATH"
+
+# brew vim
+export PATH="/usr/local/Cellar/vim/8.1.0550/bin:$PATH"
