@@ -1,7 +1,5 @@
 # my-config-files
 
-写在前面：*需要注意的是，配置文件中涉及到用户名的地方，需要替换成你本机的用户名
-
 主要记录Linux/Mac环境下的相关工具的配置文件：
 
 - alfred-workflow
