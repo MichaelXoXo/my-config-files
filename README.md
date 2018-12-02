@@ -47,7 +47,7 @@
 ### 示例截图
 - session 界面说明
 
-![](https://ws2.sinaimg.cn/large/006tNbRwly1fxscvbszggj30wv05bdgw.jpg)
+![](https://ws3.sinaimg.cn/large/006tNbRwly1fxscxv0np8j30wv05b402.jpg)
 
 - session 会话选择
 
