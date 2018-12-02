@@ -51,8 +51,27 @@
 
 ![](https://ws1.sinaimg.cn/large/006tNbRwly1fxsa22tpexj30ce01uq31.jpg)
 
+### 参考链接
+
+- [路易斯-Tmux使用手册](http://louiszhai.github.io/2017/09/30/tmux/)
+- [tmux 指南](code.huawei.com/mingsheng.li/ci-jobs-pub)
+    - [Tmux - Linux从业者必备利器](http://cenalulu.github.io/linux/tmux/)
+    - [Nicol-超好用的会话管理工具Tmux](http://taozj.net/201711/tmux-config.html)
+
 
 ## vim 快捷键
+
+`<leader>`按键为`,`
+
+-`F2` 展开/关闭文件夹目录树
+- `<leader> w` 保存文件
+- `<leader> q` 退出文件
+- `<leader> f` 格式化 Python 文件
+- `<leader> r` 运行 Python 文件
+- `<leader> /` 去除搜索高亮
+- `ctrl p` 模糊搜索当前目录和子目录下的文件
+- `H/L` 行首和行尾，`d H` 实现删除到行首
+
 
 
 ## 参考
