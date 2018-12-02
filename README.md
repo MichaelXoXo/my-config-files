@@ -53,8 +53,8 @@
 
 - [路易斯-Tmux使用手册](http://louiszhai.github.io/2017/09/30/tmux/)
 - [tmux 指南](code.huawei.com/mingsheng.li/ci-jobs-pub)
-    - [Tmux - Linux从业者必备利器](http://cenalulu.github.io/linux/tmux/)
-    - [Nicol-超好用的会话管理工具Tmux](http://taozj.net/201711/tmux-config.html)
+- [Tmux - Linux从业者必备利器](http://cenalulu.github.io/linux/tmux/)
+- [Nicol-超好用的会话管理工具Tmux](http://taozj.net/201711/tmux-config.html)
 
 
 ## vim 快捷键
