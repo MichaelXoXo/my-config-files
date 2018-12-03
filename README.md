@@ -14,7 +14,7 @@
 
 在终端中输入 tmux 就可以打开一个新的 tmux session，tmux 的所有操作必须先使用一个前缀键`prefix`（默认是 `ctrl + b`）进入命令模式。
 
-## 信息查询
+### 信息查询
 
 - `tmux list-keys` 列出所有可以的快捷键和其他 tmux 命令
 - `tmux list-commands` 列出所有 tmux 命令及其参数，有用的命令
@@ -62,12 +62,16 @@
 `<leader>`按键为`,`
 
 - `F2` 展开/关闭文件夹目录树
+- `<leader>m` 取消 indentline 的缩进线
+- `<leader>n` 取消行号
+- `<leader>nn` 显示行号
 - `<leader> w` 保存文件
 - `<leader> q` 退出文件
 - `<leader> f` 格式化 Python 文件
 - `<leader> r` 运行 Python 文件
 - `<leader> /` 去除搜索高亮
 - `ctrl p` 模糊搜索当前目录和子目录下的文件
+- `ctrl h/j/k/l` vim 自身的分屏窗口跳转，原来需要`ctrl w h/j/k/l`
 - `H/L` 行首和行尾，`d H` 实现删除到行首
 
 
