@@ -77,6 +77,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# 补全快捷键重设
+bindkey ',' autosuggest-accept
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

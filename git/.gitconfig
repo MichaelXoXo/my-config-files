@@ -1,5 +1,22 @@
 [core]
+    autocrlf = false
 	quotepath = false
 [user]
 	name = Michael728
 	email = 649168982@qq.com
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+    ui = true
+[push]
+    default = matching
+[https]
+    #proxy = http://127.0.0.1:1087
+    #sslVerify = false
+[http]
+    #proxy = http://127.0.0.1:1087
+    #sslVerify = false
