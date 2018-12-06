@@ -78,7 +78,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # 补全快捷键重设
-bindkey ',' autosuggest-accept
+#bindkey ',' autosuggest-accept
 
 # User configuration
 
