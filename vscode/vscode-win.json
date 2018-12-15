@@ -1,0 +1,35 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "files.autoSave": "onWindowChange",
+    // 设置保存时，自动将Python代码的一些空格给trim掉；
+    "files.trimTrailingWhitespace": true,
+    // 将一些编译后而不想在编辑器里看到的文件隐藏；
+    "files.exclude": {
+        ".vs*": true,
+        "*.*~": true,
+        "*.pyc": true,
+        "*/*.pyc": true
+    },
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100"
+    ],
+    "editor.formatOnSave": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--include-naming-hint=n",
+        "--disable=W0311",
+        "--disable=C0103",
+        "--disable=E1101"
+    ],
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.eol": "\n",
+    "workbench.colorTheme": "Dracula",
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "breadcrumbs.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.insertSpaces": true,
+}
