@@ -8,4 +8,8 @@
 - popclip
 - tmux
 - vim
+- vscode
 - zsh
+
+## 一些资源
+- 字体：[Github-powerline/fonts](https://github.com/powerline/fonts)
