@@ -9,3 +9,4 @@ git config --global core.excludesfile /Users/michael/.gitignore_global
 
 ## 参考
 - [dev-setup/.gitignore](https://github.com/donnemartin/dev-setup/blob/master/.gitignore)
+- [常用 .gitignore](https://wild-flame.github.io/guides/docs/mac-os-x-setup-guide/gitignore)
