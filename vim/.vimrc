@@ -1,59 +1,49 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Make sure you use single quotes
 
-" ################ pp start ################
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Any valid git URL is allowed
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-Plugin 'rking/ag.vim' "https://github.com/rking/ag.vim
-Plugin 'vim-airline/vim-airline' "https://github.com/vim-airline/vim-airline
-Plugin 'vim-airline/vim-airline-themes' "  https://github.com/vim-airline/vim-airline-themes https://github.com/vim-airline/vim-airline/wiki/Screenshots
-Plugin 'klen/python-mode' " https://vimawesome.com/plugin/python-mode
-Plugin 'Yggdroot/indentLine' " https://github.com/Yggdroot/indentLine
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'dracula/vim' " https://draculatheme.com/vim/
-Plugin 'majutsushi/tagbar' " https://github.com/majutsushi/tagbar
+" Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
+" Using a non-master branch
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+
+" 状态栏插键
+Plug 'vim-airline/vim-airline'
+
+" 状态栏主题插键
+Plug 'vim-airline/vim-airline-themes'
+
+" 自动引号括号补全
+Plug 'jiangmiao/auto-pairs'
+
+" Initialize plugin system
+call plug#end()
 
 "############# 00 插 键 配 置 ##################
 
@@ -61,77 +51,8 @@ filetype plugin indent on    " required
 let mapleader="," " 设置 leader
 let g:mapleader = ","
 
-
-" Plugin vim-airline
-" https://github.com/vim-airline/vim-airline/wiki/Screenshots
-let g:airline_powerline_fonts = 1 " 这个是安装字体后 必须设置此项 
-let g:airline_theme='deus'
-let g:Powerline_symbols='fancy'
-let Powerline_symbols='fancy'
-set t_Co=256 " 状态栏就有颜色了
-
-
-" Plugin python-mode
-" https://github.com/python-mode/python-mode/blob/develop/doc/pymode.txt
-let g:pymode_rope = 1
-let g:pymode_rope_completion = 1
-let g:pymode_rope_completion_bind = '<C-p>'  "为了自动补全有效，需要将 set paste 设置不启用
-let g:pymode_rope_goto_definition_bind = '<C-c>g'
-let g:pymode_python = 'python3' " 默认检查 Python2
-"Autofix PEP8 errors
-nnoremap <leader>f :PymodeLintAuto<CR>
-let g:pymode_rope_lookup_project=0
-
-
-" Plugin indentLine settings.
-"let g:indentLine_char='|'
-let g:indentLine_enabled = 1
-let g:indentLine_color_term = 239
-"let g:indentLine_char = 'c'
-highlight PmenuSel cterm=underline,bold ctermfg=blue
-"设置光标样式为竖线vertical bar
-"" Change cursor shape between insert and normal mode in iTerm2.app
-"if $TERM_PROGRAM =~ "iTerm"
-"  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-"  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-"endif
-
-
-" Plugin ctrlp
-" http://www.zlovezl.cn/articles/vim-plugins-cannot-live-without/
-let g:ctrlp_map = '<c-p>' 
-let g:ctrlp_cmd = 'CtrlP'
-" 设置过滤不进行查找的后缀名 
-" let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc)$' 
-
-
-" Plugin 'scrooloose/nerdtree'
-"F2开启和关闭树"
-map <F2> :NERDTreeToggle<CR>
-let NERDTreeChDirMode=1
-"显示书签"
-let NERDTreeShowBookmarks=1
-"设置忽略文件类型"
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
-"窗口大小"
-let NERDTreeWinSize=25
-
-
-" Plugin dracula
-colorscheme dracula
-
-
-" Plugin majutsushi/tagbar
-nmap <F8> :TagbarToggle<CR>
-let g:tagbar_autofocus = 1 " 启动时自动focus 到 tarbar
-
-
-" Plugin ag
-
-
-" For Tmux
-"如果喜欢给窗口自定义命名，那么需要关闭窗口的自动命名
-"set-option -g allow-rename off " don't rename windows automatically http://taozj.net/201711/tmux-config.html
+" vim-airline 状态栏主题配置
+let g:airline_theme='Cobalt 2'
 
 
 "############# 11  Vim 自有配置 ##############
