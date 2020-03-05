@@ -17,6 +17,9 @@ source ~/.zshrc
 mvn --version
 ```
 
+参考：
+- [cnblogs-Maven - Mac下安装并配置Maven](https://www.cnblogs.com/helios-fz/p/11061033.html)
+
 ## 配置 maven 源
 
 编辑 `/Users/michael/opt/apache-maven-3.6.2/conf/settings.xml`，在 `mirrors` 标签内，添加配置源，可以采用华为云镜像或者阿里源镜像：
