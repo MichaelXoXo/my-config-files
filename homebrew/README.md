@@ -3,5 +3,5 @@ Homebrew有比较快的源（mirror）吗？ - lsxiao的回答 - 知乎
 
 ```shell
 # vim ~/.curlrc
-socks5 = 127.0.0.1:1086"
+socks5 = 127.0.0.1:1086
 ```
